@@ -1,0 +1,184 @@
+* {
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: center;
+}
+
+p {
+	line-height: 0.4em;
+}
+
+.large {
+	font-size: 3em;
+	line-height: 1em;
+}
+
+.medium {
+	font-size: 2em;
+	line-height: 0px;
+}
+
+#wrapper {
+	margin: auto;
+	border: 1px solid black;
+	padding: 1em;
+	border: solid 2px black;
+}
+
+#bean-mashing-area {
+	width: 600px;
+	height: 600px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	margin: auto;
+	padding: 1em;
+	display: inline-block;
+	user-select: none;
+}
+
+#bean-button {
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	background: url("http://downloadsnet.webs.com/sprites/bean.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition-duration: 0.2s;
+	animation: bobbing-bean linear 0.2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes bobbing-bean {
+	0% { transform: scale(1) translate(0, 50%); }
+	100% { transform: scale(1.05) translate(0, 50%); }
+}
+
+#bean-button:hover {
+	opacity: 0.8;
+	transition-duration: 0.1s;
+	cursor: pointer;
+}
+
+.bean-animate {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url("http://downloadsnet.webs.com/sprites/bean.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: bean-animate 0.5s linear;
+	animation-iteration-count: 1;
+	pointer-events: none;
+	z-index: 100;
+}
+
+@keyframes bean-animate {
+	0% { opacity: 1; transform: translate(0, 0); }
+	30% { transform: translate(0, -20px) rotate(180deg);}
+	100% { opacity: 0; transform: translate(0, -40px) rotate(-180deg);}
+}
+
+/* ------------ MASHING UPGRADES ------------ */
+
+.fingers {
+	position: absolute;
+	background: url("http://downloadsnet.webs.com/sprites/fingers.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: animate 10s linear;
+	animation-iteration-count: infinite;
+	visibility: hidden;
+	pointer-events: none;
+	transform-origin: 0 0;
+	z-index: 100;
+}
+
+.spoons {
+	position: absolute;
+	background: url("http://downloadsnet.webs.com/sprites/spoons.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: animate 1s linear;
+	animation-iteration-count: infinite;
+	visibility: hidden;
+	pointer-events: none;
+	transform-origin: 0 0;
+	z-index: 100;
+}
+
+.hammers {
+	position: absolute;
+	background: url("http://downloadsnet.webs.com/sprites/hammers.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: animate 0.5s linear;
+	animation-iteration-count: infinite;
+	visibility: hidden;
+	pointer-events: none;
+	transform-origin: 0 0;
+	z-index: 100;
+}
+
+.chainsaws {
+	position: absolute;
+	background: url("http://downloadsnet.webs.com/sprites/chainsaws.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: animate 0.5s linear;
+	animation-iteration-count: infinite;
+	visibility: hidden;
+	pointer-events: none;
+	transform-origin: 0 0;
+	z-index: 100;
+}
+
+@keyframes animate {
+	0% { opacity: 0; visibility: visible; height: 100px; width: 100px; }
+	10% { opacity: 1; }
+	95% { opacity: 1; }
+	100% { opacity: 0; left: 300px; top: 300px; height: 20px; width: 20px; }
+}
+
+#animation-holder {
+	position: relative;
+	visibility: hidden;
+}
+
+/* ------------ ------------ ------------ ------------ */
+
+#upgrades-shop {
+	width: 600px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto;
+	padding: 1em;
+	border: 4px solid black;
+	border-radius: 1em;
+	user-select: none;
+}
+
+.btn-upgrade {
+	position: relative;
+	border: solid 2px black;
+	border-radius: 0.5em;
+	margin: 10px 0 10px 0;
+	cursor: pointer;
+}
+
+.btn-upgrade:hover {
+	background-color: rgba(0,255,0,0.3);
+}
+
+.cant-afford, .cant-afford:hover {
+	background-color: rgba(255,0,0,0.3);;
+}
+
+.upgrade-image {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.3;
+	background-size: contain;
+	z-index: -100;
+}

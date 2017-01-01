@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Mash the Bean</title>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="wrapper">
+	<h1 class="large">Mash the Bean</h1>
+	<div id="bean-mashing-area">
+		<div id="animation-holder"></div>
+		<div id="bean-animation-holder"></div>
+		<div onmousedown="ClickBean(1)" id="bean-button">
+		</div>
+	</div>
+	<div id="upgrades-shop">
+		<template id="upgrade-template">
+			<div id="{{name_plural}}-upgrade" class="{{classes}}" onmousedown="BuyUpgrade({{name}}, 1)">
+				<div class="upgrade-image" style='background-image: url("http://downloadsnet.webs.com/sprites/{{name_plural}}.png"'>
+				</div>
+				<p>{{name}} -- {{bps}} bean{{s}} every second (price: {{cnprice}} beans) ({{number}})</p>
+				<p>{{desc}}</p>
+			</div>
+		</template>
+		<p class="large"><span id="beans-mashed"></span> beans mashed</p>
+		<p class="medium"><span id="bps"></span> beans per second</p>
+		<p class="medium">Upgrades:</p>
+		<div id="upgrades-list">
+		</div>
+	</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
