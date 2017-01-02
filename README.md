@@ -1,2 +1,2 @@
 # bean-masher
-Bean mashing game
+Bean mashing game inspired by Cookie Clicker.
