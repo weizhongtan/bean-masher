@@ -1,0 +1,21 @@
+{
+  "name": "bean-masher",
+  "description": "bean mashing game",
+  "main": "index.html",
+  "authors": [
+    "wzt"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/weizhongtan/bean-masher",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mustache.js": "mustache#^2.3.0"
+  }
+}

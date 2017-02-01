@@ -40,7 +40,7 @@ p {
 	height: 300px;
 	width: 300px;
 	margin: auto;
-	background: url("http://downloadsnet.webs.com/sprites/bean.png");
+	background: url("../images/bean.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition-duration: 0.2s;
@@ -64,7 +64,7 @@ p {
 	position: absolute;
 	width: 60px;
 	height: 60px;
-	background: url("http://downloadsnet.webs.com/sprites/bean.png");
+	background: url("../images/bean.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation: bean-animate 0.5s linear;
@@ -83,7 +83,7 @@ p {
 
 .fingers {
 	position: absolute;
-	background: url("http://downloadsnet.webs.com/sprites/fingers.png");
+	background: url("../images/fingers.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation: animate 10s linear;
@@ -96,7 +96,7 @@ p {
 
 .spoons {
 	position: absolute;
-	background: url("http://downloadsnet.webs.com/sprites/spoons.png");
+	background: url("../images/spoons.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation: animate 1s linear;
@@ -109,7 +109,7 @@ p {
 
 .hammers {
 	position: absolute;
-	background: url("http://downloadsnet.webs.com/sprites/hammers.png");
+	background: url("../images/hammers.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation: animate 0.5s linear;
@@ -122,7 +122,7 @@ p {
 
 .chainsaws {
 	position: absolute;
-	background: url("http://downloadsnet.webs.com/sprites/chainsaws.png");
+	background: url("../images/chainsaws.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation: animate 0.5s linear;
